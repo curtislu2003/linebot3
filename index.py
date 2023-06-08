@@ -24,7 +24,7 @@ def work():
    df5 = pd.merge(df2,df3, on='机台编号')
    df6 = pd.merge(df5,df4, on='机台编号')
 
-    return df6
+   return df6
 
 app = Flask(__name__)
 
