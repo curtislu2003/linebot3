@@ -9,11 +9,11 @@ from linebot.models import (
 )
 
 import requests
-
+import pandas as pd
+import matplotlib
+import matplotlib.pyplot as plt
 def work():
-   import pandas as pd
-   import matplotlib
-   import matplotlib.pyplot as plt
+
    url='https://docs.google.com/spreadsheets/d/e/2PACX-1vSveRQbLbdsOw-4uh_60nAyrztHHxKoYnuT4eL6KeM4ZZRfK2dwl4zwYZgN0OKJfAuVP1-wv_TM2GZj/pub?gid=1258066858&single=true&output=csv'
    df = pd.read_csv(url)
    df1 = df[['周别', '机台编号', '生产效率', '实际重量/KG', '损耗']]
